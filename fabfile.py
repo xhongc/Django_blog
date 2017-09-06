@@ -14,8 +14,8 @@ env.port ='28298'
 def deploy():
     source_folder = '/home/chao/sites/demo.xhongc.cc/Django_blog'
 
-    run('cd %s'% source_folder)
-    run('git pull')
+    run('cd %s && git pull'% source_folder)
+
     run('''
     cd {0} &&
     /home/chao/sites/demo.xhongc.cc/env/bin/pip install -r requirements.txt &&
