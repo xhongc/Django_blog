@@ -1,5 +1,5 @@
 # Django_blog
-Django  blog 项目
+Django  blog [项目](xhongc.cc)
 ![](https://github.com/xhongc/Django_blog/blob/master/xhongc.jpg?raw=true)
 
 ## 本项目使用的开发环境
