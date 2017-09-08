@@ -1,6 +1,6 @@
 # Django_blog
 Django  blog 项目
-
+![](https://github.com/xhongc/Django_blog/blob/master/xhongc.jpg?raw=true)
 
 ## 本项目使用的开发环境
 系统平台为 Windows 10 （64 位），Python 版本为 3.6.1 （64 位），Django 版本为 1.10.6。
