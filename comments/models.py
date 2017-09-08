@@ -7,7 +7,6 @@ class Comment(models.Model):
     url = models.URLField(blank=True)
     text = models.TextField()
     created_time =models.DateTimeField(auto_now_add=True)
-
     post = models.ForeignKey('blog.Post')
 
     def __str__(self):
