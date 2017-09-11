@@ -17,6 +17,6 @@ def deploy():
     /home/chao/sites/demo.xhongc.cc/env/bin/python3 manage.py collectstatic --noinput &&
     /home/chao/sites/demo.xhongc.cc/env/bin/python3 manage.py migrate
     '''.format(source_folder))
-
-    sudo('restart gunicorn-xhongc.cc')
-    sudo('service nginx reload')
+    with cd(source_folder):
+        sudo('gunicorn --bind unix:/tmp/xhongc.cc.socket blogproject.wsgi:application')
+        sudo('service nginx reload')
